@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Reader Extension",
+  "version": "1.0.0",
+  "description": "Browser extension that reads web articles aloud with high-quality text-to-speech",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+
+  "action": {
+    "default_title": "Toggle Screen Reader",
+    "default_icon": {
+      "128": "icons/icon.svg"
+    }
+  },
+
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "lib/utils.js",
+        "lib/messaging.js",
+        "lib/models/TextContent.js",
+        "content/text-extractor.js",
+        "content/text-highlighter.js",
+        "content/ui-overlay.js",
+        "content/click-handler.js",
+        "content/content-script.js"
+      ],
+      "css": ["content/overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

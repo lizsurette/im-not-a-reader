@@ -1,0 +1,44 @@
+#screen-reader-overlay {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: none;
+  font-family: Arial, sans-serif;
+}
+
+.sr-controls {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sr-controls button {
+  background: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.sr-controls button:hover {
+  background: #357abd;
+}
+
+#sr-speed {
+  width: 80px;
+}
+
+#sr-speed-label {
+  color: white;
+  font-size: 12px;
+  min-width: 30px;
+}
