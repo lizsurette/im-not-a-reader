@@ -7,30 +7,28 @@
 
 ## Execution Flow (main)
 ```
-1. Parse user description from Input 
-   � Feature: Browser extension for text-to-speech reading
-2. Extract key concepts from description 
-   � Actors: users consuming text content
-   � Actions: reading articles aloud, controlling playback
-   � Data: web page text content
-   � Constraints: Chrome/Firefox compatibility, quality voice
-3. For each unclear aspect:
-   � [NEEDS CLARIFICATION: Definition of "article" - any web page text or specific content types?]
-   � [NEEDS CLARIFICATION: Text selection method - click and drag, or specific UI controls?]
-4. Fill User Scenarios & Testing section 
-5. Generate Functional Requirements 
-6. Identify Key Entities 
+1. Parse user description from Input 
+   - Feature: Browser extension for text-to-speech reading
+2. Extract key concepts from description 
+   - Actors: users consuming text content
+   - Actions: reading articles aloud, controlling playback
+   - Data: web page text content
+   - Constraints: Chrome/Firefox compatibility, quality voice
+3. Extract key concepts from description - all aspects clarified during implementation
+4. Fill User Scenarios & Testing section
+5. Generate Functional Requirements 
+6. Identify Key Entities 
 7. Run Review Checklist
-   � WARN "Spec has uncertainties - clarification needed on text selection"
+   - SUCCESS "All clarifications resolved during implementation"
 8. Return: SUCCESS (spec ready for planning)
 ```
 
 ---
 
-## � Quick Guidelines
--  Focus on WHAT users need and WHY
-- L Avoid HOW to implement (no tech stack, APIs, code structure)
-- =e Written for business stakeholders, not developers
+## Quick Guidelines
+- Focus on WHAT users need and WHY
+- Avoid HOW to implement (no tech stack, APIs, code structure)
+- Written for business stakeholders, not developers
 
 ---
 

@@ -42,11 +42,11 @@
 
 ## Phase 3.1: Setup
 
-- [ ] T001 Create browser extension project structure with src/, tests/ directories
-- [ ] T002 Create extension manifest.json with Manifest V3 configuration for Chrome/Firefox compatibility
-- [ ] T003 [P] Initialize package.json with Jest testing framework and development dependencies
-- [ ] T004 [P] Configure ESLint and Prettier for JavaScript code formatting
-- [ ] T005 [P] Set up Jest configuration for browser extension testing environment
+- [x] T001 Create browser extension project structure with src/, tests/ directories
+- [x] T002 Create extension manifest.json with Manifest V3 configuration for Chrome/Firefox compatibility
+- [x] T003 [P] Initialize package.json with Jest testing framework and development dependencies
+- [x] T004 [P] Configure ESLint and Prettier for JavaScript code formatting
+- [x] T005 [P] Set up Jest configuration for browser extension testing environment
 
 ## Phase 3.2: Tests First (TDD) ⚠️ MUST COMPLETE BEFORE 3.3
 **CRITICAL: These tests MUST be written and MUST FAIL before ANY implementation**
@@ -70,42 +70,42 @@
 ## Phase 3.3: Core Implementation (ONLY after tests are failing)
 
 ### Data Models
-- [ ] T018 [P] AudioSession model in src/lib/models/AudioSession.js
-- [ ] T019 [P] TextContent model in src/lib/models/TextContent.js
-- [ ] T020 [P] UserPreferences model in src/lib/models/UserPreferences.js
+- [x] T018 [P] AudioSession model in src/lib/models/AudioSession.js
+- [x] T019 [P] TextContent model in src/lib/models/TextContent.js
+- [x] T020 [P] UserPreferences model in src/lib/models/UserPreferences.js
 
 ### Content Script Components
-- [ ] T021 [P] Text extractor with Readability algorithm in src/content/text-extractor.js
-- [ ] T022 [P] UI overlay creation and management in src/content/ui-overlay.js
-- [ ] T023 [P] Click handler for word selection in src/content/click-handler.js
-- [ ] T024 Text highlighting functionality in src/content/text-highlighter.js
-- [ ] T025 Content script main coordinator in src/content/content-script.js
+- [x] T021 [P] Text extractor with Readability algorithm in src/content/text-extractor.js
+- [x] T022 [P] UI overlay creation and management in src/content/ui-overlay.js
+- [x] T023 [P] Click handler for word selection in src/content/click-handler.js
+- [x] T024 Text highlighting functionality in src/content/text-highlighter.js
+- [x] T025 Content script main coordinator in src/content/content-script.js
 
 ### Background Script Components
-- [ ] T026 [P] Speech synthesis controller in src/background/speech-controller.js
-- [ ] T027 [P] Session state manager in src/background/session-manager.js
-- [ ] T028 [P] User preferences storage in src/background/storage-manager.js
-- [ ] T029 Voice selection and management in src/background/voice-manager.js
-- [ ] T030 Background script main service worker in src/background/background.js
+- [x] T026 [P] Speech synthesis controller in src/background/speech-controller.js
+- [ ] T027 [P] Session state manager in src/background/session-manager.js (functionality integrated into background.js)
+- [ ] T028 [P] User preferences storage in src/background/storage-manager.js (functionality integrated into background.js)
+- [ ] T029 Voice selection and management in src/background/voice-manager.js (not needed - using default voice)
+- [x] T030 Background script main service worker in src/background/background.js
 
 ### Popup Interface
-- [ ] T031 [P] Popup HTML structure in src/popup/popup.html
-- [ ] T032 [P] Popup JavaScript functionality in src/popup/popup.js
-- [ ] T033 [P] Popup CSS styling in src/popup/popup.css
+- [ ] T031 [P] Popup HTML structure in src/popup/popup.html (replaced with direct browser action toggle)
+- [ ] T032 [P] Popup JavaScript functionality in src/popup/popup.js (replaced with direct browser action toggle)
+- [ ] T033 [P] Popup CSS styling in src/popup/popup.css (not needed - direct toggle implementation)
 
 ### Shared Utilities
-- [ ] T034 [P] Extension storage utilities in src/lib/storage.js
-- [ ] T035 [P] Common utility functions in src/lib/utils.js
-- [ ] T036 [P] Message passing utilities in src/lib/messaging.js
+- [x] T034 [P] Extension storage utilities in src/lib/storage.js
+- [x] T035 [P] Common utility functions in src/lib/utils.js
+- [x] T036 [P] Message passing utilities in src/lib/messaging.js
 
 ## Phase 3.4: Integration
 
-- [ ] T037 Connect content script to background script messaging
-- [ ] T038 Implement cross-browser API compatibility layer
-- [ ] T039 Add error handling and logging throughout extension
-- [ ] T040 Implement user preference persistence and loading
-- [ ] T041 Add content security policy and security hardening
-- [ ] T042 Implement tab management and cleanup
+- [x] T037 Connect content script to background script messaging
+- [x] T038 Implement cross-browser API compatibility layer
+- [x] T039 Add error handling and logging throughout extension
+- [x] T040 Implement user preference persistence and loading
+- [x] T041 Add content security policy and security hardening
+- [x] T042 Implement tab management and cleanup
 
 ## Phase 3.5: Polish
 
@@ -114,10 +114,10 @@
 - [ ] T045 [P] Unit tests for session management in tests/unit/test_session_manager.js
 - [ ] T046 [P] Performance tests for large article handling in tests/performance/test_large_articles.js
 - [ ] T047 [P] Accessibility tests for screen reader compatibility in tests/accessibility/test_a11y.js
-- [ ] T048 [P] Update README.md with installation and usage instructions
+- [x] T048 [P] Update README.md with installation and usage instructions
 - [ ] T049 [P] Create user documentation in docs/user-guide.md
-- [ ] T050 Cross-browser testing and compatibility validation
-- [ ] T051 Performance optimization and memory usage validation
+- [x] T050 Cross-browser testing and compatibility validation
+- [x] T051 Performance optimization and memory usage validation
 - [ ] T052 Execute quickstart.md integration scenarios for final validation
 
 ## Dependencies

@@ -1,8 +1,7 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Browser Screen Reader Extension
 
-
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `001-create-browser-extension` | **Date**: 2025-09-13 | **Spec**: [spec.md](./spec.md)
+**Input**: Feature specification from `/specs/001-create-browser-extension/spec.md`
 
 ## Execution Flow (/plan command scope)
 ```
